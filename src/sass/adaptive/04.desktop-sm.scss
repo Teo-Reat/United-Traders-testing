@@ -1,0 +1,242 @@
+@media (min-width: 992px) {
+  .header {
+    &__title {
+      &-wrap {
+        display: block;
+      }
+    }
+
+    &__description {
+      width: 80%;
+      margin: {
+        left: auto;
+        right: auto;
+      };
+    }
+  }
+
+  .top-menu {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    height: 50px;
+    margin: {
+      top: 24px;
+    };
+
+    &__inner {
+      visibility: visible;
+      opacity: 1;
+      margin: 0;
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+    &__logo {
+      width: auto;
+      flex-shrink: 0;
+      margin: 0;
+    }
+
+    &__main-navigation {
+      width: auto;
+      align-items: center;
+      display: flex;
+      margin: {
+        right: auto;
+      };
+
+      &-list {
+        margin: {
+          top: 0;
+        };
+      }
+
+      &-item {
+        width: auto;
+        margin: {
+          left: 40px;
+        };
+      }
+
+      &-link {
+        transition: .5s;
+
+        &:hover {
+          color: $hover;
+        }
+
+        &:hover .icon-arrow {
+          fill: $hover;
+        }
+
+        &:active {
+          color: $active;
+        }
+
+        &:active .icon-arrow {
+          fill: $active;
+        }
+      }
+    }
+
+    &__login {
+      display: flex;
+      align-items: center;
+      margin: {
+        top: 0;
+        left: auto;
+      };
+
+      &-button {
+        transition: .5s;
+
+        &:hover {
+          color: $hover;
+        }
+
+        &:active {
+          color: $active;
+        }
+      }
+    }
+
+    &__buy-now {
+      display: flex;
+      align-items: center;
+      margin: {
+        top: 0;
+        left: 30px;
+      };
+
+      &-button {
+        transition: .5s;
+
+        &:hover {
+          color: $hover;
+        }
+
+        &:active {
+          color: $active;
+        }
+      }
+    }
+  }
+
+  .mobile-menu-toggle {
+    display: none;
+  }
+
+  .some-section {
+    &__item {
+
+    }
+  }
+
+  .some-item {
+    &__inner {
+      box-shadow: none;
+      transition: .5s;
+
+      &:hover {
+        box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+        margin: {
+          top: -3px;
+        };
+      }
+    }
+  }
+
+  .another-section {
+
+    &__description {
+      margin: {
+        top: 30px;
+      };
+    }
+
+    &__item {
+
+    }
+  }
+
+  .another-item {
+    &__inner {
+      box-shadow: none;
+      transition: .5s;
+
+      &:hover {
+        box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+        margin: {
+          top: -3px;
+        };
+      }
+    }
+  }
+
+  .another-button {
+    transition: .5s;
+
+    &:hover {
+      background: $green;
+    }
+  }
+
+  .partners {
+    &__description {
+      margin: {
+        top: 30px;
+      };
+    }
+
+    &__items {
+      width: 80%;
+      margin: {
+        left: auto;
+        right: auto;
+      };
+    }
+  }
+
+  .footer {
+    &__navigation {
+      justify-content: center;
+
+      &-item {
+        margin: {
+          left: 12px;
+          right: 12px;
+        };
+      }
+
+      &-link {
+        transition: .5s;
+
+        &:hover {
+          color: $hover;
+        }
+
+        &:active {
+          color: $active;
+        }
+      }
+    }
+  }
+
+  .icon-facebook,
+  .icon-instagram,
+  .icon-twitter {
+    transition: .5s;
+
+    &:hover {
+      fill: $hover;
+    }
+
+    &:active {
+      fill: $active;
+    }
+  }
+
+  .icon-arrow {
+    transition: .5s;
+  }
+}

@@ -1,0 +1,29 @@
+@media (min-width: 576px) {
+  .some-section {
+    &__item {
+      margin: {
+        top: 30px;
+      };
+    }
+  }
+
+  .some-item {
+    &__inner {
+
+    }
+  }
+
+  .another-section {
+    &__item {
+      margin: {
+        top: 30px;
+      };
+    }
+  }
+
+  .another-item {
+    &__inner {
+      min-height: 250px;
+    }
+  }
+}

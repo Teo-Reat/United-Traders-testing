@@ -6,45 +6,71 @@
     <title>United Traders</title>
 </head>
 <body class="body">
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <symbol id="icon-arrow" viewBox="0 0 64 32">
+            <path d="M57.52 0.053c-0.493 0.038-0.951 0.252-1.28 0.597l-24.24 22.624-24.24-22.624c-0.202-0.196-0.449-0.347-0.723-0.441s-0.567-0.128-0.857-0.101c-0.362 0.036-0.705 0.168-0.99 0.379s-0.5 0.494-0.619 0.815c-0.119 0.321-0.139 0.667-0.056 0.997s0.265 0.633 0.525 0.87l25.6 23.893c0.178 0.167 0.39 0.3 0.624 0.39s0.484 0.137 0.736 0.137c0.253 0 0.503-0.047 0.736-0.137s0.445-0.223 0.624-0.39l25.6-23.893c0.298-0.251 0.505-0.583 0.59-0.949s0.046-0.748-0.113-1.092-0.429-0.633-0.773-0.826c-0.344-0.193-0.744-0.281-1.144-0.251z"></path>
+        </symbol>
+        <symbol id="icon-facebook" viewBox="0 0 17 32">
+            <path d="M15.894 0.007l-3.961-0.007c-4.451 0-7.327 3.091-7.327 7.875v3.631h-3.983c-0.344 0-0.623 0.292-0.623 0.653v5.261c0 0.361 0.279 0.652 0.623 0.652h3.983v13.275c0 0.361 0.279 0.653 0.623 0.653h5.197c0.344 0 0.623-0.292 0.623-0.652v-13.275h4.657c0.344 0 0.623-0.292 0.623-0.652l0.002-5.261c0-0.173-0.066-0.339-0.182-0.461s-0.275-0.191-0.441-0.191h-4.659v-3.078c0-1.479 0.337-2.23 2.176-2.23l2.669-0.001c0.344 0 0.623-0.292 0.623-0.652v-4.885c0-0.36-0.278-0.652-0.622-0.652z"></path>
+        </symbol>
+        <symbol id="icon-instagram" viewBox="0 0 32 32">
+            <path d="M22 0h-12c-5.522 0-10 4.478-10 10v12c0 5.522 4.478 10 10 10h12c5.522 0 10-4.478 10-10v-12c0-5.522-4.478-10-10-10zM29 22c0 3.86-3.14 7-7 7h-12c-3.86 0-7-3.14-7-7v-12c0-3.86 3.14-7 7-7h12c3.86 0 7 3.14 7 7v12z"></path>
+            <path d="M16 8c-4.418 0-8 3.582-8 8s3.582 8 8 8c4.418 0 8-3.582 8-8s-3.582-8-8-8zM16 21c-2.756 0-5-2.244-5-5 0-2.758 2.244-5 5-5s5 2.242 5 5c0 2.756-2.244 5-5 5z"></path>
+            <path d="M24.6 8.466c0.589 0 1.066-0.477 1.066-1.066s-0.477-1.066-1.066-1.066c-0.589 0-1.066 0.477-1.066 1.066s0.477 1.066 1.066 1.066z"></path>
+        </symbol>
+        <symbol id="icon-twitter" viewBox="0 0 36 32">
+            <path d="M35.556 4.609c-1.309 0.599-2.713 1.006-4.188 1.187 1.506-0.932 2.66-2.411 3.206-4.167-1.413 0.863-2.973 1.49-4.635 1.83-1.331-1.467-3.224-2.381-5.323-2.381-4.028 0-7.294 3.375-7.294 7.535 0 0.59 0.064 1.166 0.189 1.717-6.061-0.315-11.436-3.315-15.033-7.875-0.629 1.111-0.986 2.406-0.986 3.788 0 2.615 1.289 4.922 3.244 6.272-1.195-0.041-2.32-0.381-3.304-0.946v0.094c0 3.65 2.515 6.697 5.85 7.39-0.611 0.17-1.255 0.264-1.922 0.264-0.471 0-0.926-0.048-1.373-0.14 0.929 2.996 3.622 5.175 6.812 5.235-2.495 2.020-5.641 3.221-9.058 3.221-0.589 0-1.169-0.037-1.74-0.103 3.228 2.142 7.061 3.391 11.18 3.391 13.417 0 20.752-11.484 20.752-21.443l-0.024-0.976c1.433-1.056 2.673-2.383 3.648-3.894z"></path>
+        </symbol>
+    </defs>
+</svg>
 <header class="header">
     <div class="background-image">
         <img src="assets/images/main-bg.jpg" alt="">
     </div>
     <div class="container">
         <div class="top-menu">
-            <div class="top-menu__logo">
+            <a class="top-menu__logo" href="#">
                 <img src="assets/images/logo.png" alt="" class="top-menu__logo-image">
-            </div>
-            <div id="nav-icon1">
+            </a>
+            <div class="mobile-menu-toggle" id="nav-icon1">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-            <nav class="top-menu__main-navigation">
-                <ul class="top-menu__main-navigation-list">
-                    <li class="top-menu__main-navigation-item">
-                        <a class="top-menu__main-navigation-link" href="#">Products</a>
-                    </li>
-                    <li class="top-menu__main-navigation-item">
-                        <a class="top-menu__main-navigation-link" href="#">News & Events</a>
-                    </li>
-                    <li class="top-menu__main-navigation-item">
-                        <a class="top-menu__main-navigation-link" href="#">Support</a>
-                    </li>
-                    <li class="top-menu__main-navigation-item">
-                        <a class="top-menu__main-navigation-link" href="#">Contacts</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="top-menu__login">
-                <button class="top-menu__login-button" type="button">Login</button>
-            </div>
-            <div class="top-menu__buy-now">
-                <button class="top-menu__buy-now-button" type="button">Buy Now</button>
+            <div class="top-menu__inner" id="nav-menu">
+                <nav class="top-menu__main-navigation">
+                    <ul class="top-menu__main-navigation-list">
+                        <li class="top-menu__main-navigation-item">
+                            <a class="top-menu__main-navigation-link top-menu__products" href="#">
+                                Products
+                                <svg class="icon icon-arrow">
+                                    <use xlink:href="#icon-arrow"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="top-menu__main-navigation-item">
+                            <a class="top-menu__main-navigation-link" href="#">News & Events</a>
+                        </li>
+                        <li class="top-menu__main-navigation-item">
+                            <a class="top-menu__main-navigation-link" href="#">Support</a>
+                        </li>
+                        <li class="top-menu__main-navigation-item">
+                            <a class="top-menu__main-navigation-link" href="#">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="top-menu__login">
+                    <button class="top-menu__login-button" type="button">Login</button>
+                </div>
+                <div class="top-menu__buy-now">
+                    <button class="top-menu__buy-now-button" type="button">Buy Now</button>
+                </div>
             </div>
         </div>
         <div class="header__title-wrapper">
-            <h1 class="header__title title--main">WE SOLVE YOUR PROBLEMS</h1>
+            <h1 class="header__title title--main">WE SOLVE <br class="header__title-wrap">YOUR PROBLEMS</h1>
             <div class="header__description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec accumsan velit.
                 Ut gravida id sem id sodales. Aenean quis enim dui. Vestibulum ullamcorper vel urna quis congue.
@@ -58,55 +84,235 @@
             <h2 class="some-section__title title--small">
                 Etiam ac nisl ac quam sodales scelerisque elementum quis purus.
             </h2>
-            <div class="some-section__items">
-                <div class="some-section__item some-item col-12">
-                    <div class="some-item__image-wrapper">
-                        <img class="some-item__image" src="assets/images/icon_01.png" alt="">
-                    </div>
+            <div class="some-section__items row">
+                <div class="some-section__item some-item col-12 col-sm-6 col-lg-4">
+                    <div class="some-item__inner">
+                        <div class="some-item__image-wrapper">
+                            <img class="some-item__image" src="assets/images/icon_01.png" alt="">
+                        </div>
 
-                    <h3 class="some-item__title title--small">
-                        Donec efficitur molestie
-                    </h3>
-                    <div class="some-item__description">
-                        Nulla pretium nunc in nulla placerat, sit amet porttitor enim ullamcorper. Curabitur ex erat,
-                        euismod ac vestibulum vel, viverra non lorem.
+                        <h3 class="some-item__title title--small">
+                            Donec efficitur molestie
+                        </h3>
+                        <div class="some-item__description text--description">
+                            Nulla pretium nunc in nulla placerat, sit amet porttitor enim ullamcorper. Curabitur ex
+                            erat,
+                            euismod ac vestibulum vel, viverra non lorem.
+                        </div>
+                        <a class="some-item__link" href="#">Learn More</a>
                     </div>
-                    <a class="some-item__link" href="#">Learn More</a>
                 </div>
-                <div class="some-section__item some-item col-12">
-                    <div class="some-item__image-wrapper">
-                        <img class="some-item__image" src="assets/images/icon_02.png" alt="">
-                    </div>
+                <div class="some-section__item some-item col-12 col-sm-6 col-lg-4">
+                    <div class="some-item__inner">
+                        <div class="some-item__image-wrapper">
+                            <img class="some-item__image" src="assets/images/icon_02.png" alt="">
+                        </div>
 
-                    <h3 class="some-item__title title--small">
-                        Mauris interdum venenatis
-                    </h3>
-                    <div class="some-item__description">
-                        Vivamus cursus ante eu orci rutrum, vitae viverra ante dapibus. Vivamus porta molestie turpis,
-                        quis elementum nisi egestas eget.
+                        <h3 class="some-item__title title--small">
+                            Mauris interdum venenatis
+                        </h3>
+                        <div class="some-item__description text--description">
+                            Vivamus cursus ante eu orci rutrum, vitae viverra ante dapibus. Vivamus porta molestie
+                            turpis,
+                            quis elementum nisi egestas eget.
+                        </div>
+                        <a class="some-item__link" href="#">Learn More</a>
                     </div>
-                    <a class="some-item__link" href="#">Learn More</a>
                 </div>
-                <div class="some-section__item some-item col-12">
-                    <div class="some-item__image-wrapper">
-                        <img class="some-item__image" src="assets/images/icon_03.png" alt="">
-                    </div>
+                <div class="some-section__item some-item col-12 col-sm-6 col-lg-4">
+                    <div class="some-item__inner">
+                        <div class="some-item__image-wrapper">
+                            <img class="some-item__image" src="assets/images/icon_03.png" alt="">
+                        </div>
 
-                    <h3 class="some-item__title title--small">
-                        Cras sit amet
-                    </h3>
-                    <div class="some-item__description">
-                        Fusce suscipit, ante at imperdiet vehicula, ex augue feugiat enim, sed faucibus sem tortor quis
-                        turpis. Mauris lacinia neque id augue efficitur, ut feugiat massa efficitur.
+                        <h3 class="some-item__title title--small">
+                            Cras sit amet
+                        </h3>
+                        <div class="some-item__description text--description">
+                            Fusce suscipit, ante at imperdiet vehicula, ex augue feugiat enim, sed faucibus sem tortor
+                            quis
+                            turpis. Mauris lacinia neque id augue efficitur, ut feugiat massa efficitur.
+                        </div>
+                        <a class="some-item__link" href="#">Learn More</a>
                     </div>
-                    <a class="some-item__link" href="#">Learn More</a>
                 </div>
             </div>
         </section>
-        <section class="another-section"></section>
-        <section class="partners"></section>
+        <section class="another-section">
+            <h2 class="another-section__title title--small">
+                Etiam ac nisl ac quam sodales scelerisque elementum quis purus.
+            </h2>
+            <div class="another-section__description">
+                Integer bibendum turpis sit amet pretium commodo. Cras justo elit, dapibus at viverra non, dapibus vitae
+                est. Morbi facilisis mi non iaculis porttitor. Phasellus a nibh a lacus dignissim pharetra. Vivamus
+                ullamcorper finibus mauris, sit amet volutpat enim sollicitudin sed.
+            </div>
+            <div class="another-section__items row">
+                <div class="another-section__item another-item col-12 col-sm-6 col-lg-4">
+                    <div class="another-item__inner">
+                        <div class="another-item__image-wrapper">
+                            <img class="another-item__image" src="assets/images/icon_04.png" alt="">
+                        </div>
+                        <h3 class="another-item__title title-small">
+                            Proin felis eros
+                        </h3>
+                        <div class="another-item__description text--description">
+                            Iverra sed eros id, eleifend maximus tortor
+                        </div>
+                    </div>
+                </div>
+                <div class="another-section__item another-item col-12 col-sm-6 col-lg-4">
+                    <div class="another-item__inner">
+                        <div class="another-item__image-wrapper">
+                            <img class="another-item__image" src="assets/images/icon_05.png" alt="">
+                        </div>
+                        <h3 class="another-item__title title-small">
+                            Suspendisse potenti
+                        </h3>
+                        <div class="another-item__description text--description">
+                            Vestibulum mi risus, aliquam vitae efficitur quis
+                        </div>
+                    </div>
+                </div>
+                <div class="another-section__item another-item col-12 col-sm-6 col-lg-4">
+                    <div class="another-item__inner">
+                        <div class="another-item__image-wrapper">
+                            <img class="another-item__image" src="assets/images/icon_06.png" alt="">
+                        </div>
+                        <h3 class="another-item__title title-small">
+                            Fusce pretium enim
+                        </h3>
+                        <div class="another-item__description text--description">
+                            Quisque at dui nunc. Curabitur sodales, turpis at luctus suscipit, nisl leo dignissim turpis
+                        </div>
+                    </div>
+                </div>
+                <div class="another-section__item another-item col-12 col-sm-6 col-lg-4">
+                    <div class="another-item__inner">
+                        <div class="another-item__image-wrapper">
+                            <img class="another-item__image" src="assets/images/icon_07.png" alt="">
+                        </div>
+                        <h3 class="another-item__title title-small">
+                            Vivamus urna eros
+                        </h3>
+                        <div class="another-item__description text--description">
+                            Fusce facilisis nunc a urna lacinia, nec sagittis felis efficitur. Phasellus commodo
+                            porttitor
+                            odio
+                        </div>
+                    </div>
+                </div>
+                <div class="another-section__item another-item col-12 col-sm-6 col-lg-4">
+                    <div class="another-item__inner">
+                        <div class="another-item__image-wrapper">
+                            <img class="another-item__image" src="assets/images/icon_08.png" alt="">
+                        </div>
+                        <h3 class="another-item__title title-small">
+                            Maecenas congue nisi
+                        </h3>
+                        <div class="another-item__description text--description">
+                            Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur vulputate
+                            <a class="another-item__link" href="#">arcu nisi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="another-section__item another-item col-12 col-sm-6 col-lg-4">
+                    <div class="another-item__inner">
+                        <div class="another-item__image-wrapper">
+                            <img class="another-item__image" src="assets/images/icon_09.png" alt="">
+                        </div>
+                        <h3 class="another-item__title title-small">
+                            Nullam purus velit
+                        </h3>
+                        <div class="another-item__description text--description">
+                            Praesent ac turpis sit amet ex euismod congue vitae sit amet risus
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="another-section__button another-button">
+                View All Our Products
+            </button>
+        </section>
+        <section class="partners">
+            <h2 class="partners__title title--small">
+                Wordlwide recognition
+            </h2>
+            <p class="partners__description">Integer bibendum turpis sit amet pretium commodo. Cras justo elit, dapibus
+                at viverra non, dapibus vitae est.
+                <br><br>
+                Fusce pretium enim sit amet elementum eleifend. Quisque at dui nunc.
+                Curabitur sodales, turpis at luctus suscipit, nisl leo dignissim turpis, quis blandit justo nulla sed
+                nisi. Vivamus urna eros, malesuada non massa sed, vestibulum maximus dui. Fusce facilisis nunc a urna
+                lacinia, nec sagittis felis efficitur. Phasellus commodo porttitor odio, eu commodo nisi vehicula ut.
+                Maecenas congue nisi lorem, et maximus ante vestibulum eu. Vivamus non imperdiet ex.
+            </p>
+            <div class="partners__items row">
+                <a class="partners__item partner col-6 col-md-2" href="#">
+                    <img class="partner__logo" src="assets/images/image_01.png" alt="">
+                </a>
+                <a class="partners__item partner col-6 col-md-2" href="#">
+                    <img class="partner__logo" src="assets/images/image_02.png" alt="">
+                </a>
+                <a class="partners__item partner col-6 col-md-2" href="#">
+                    <img class="partner__logo" src="assets/images/image_03.png" alt="">
+                </a>
+                <a class="partners__item partner col-6 col-md-2" href="#">
+                    <img class="partner__logo" src="assets/images/image_04.png" alt="">
+                </a>
+                <a class="partners__item partner col-12 col-md-4" href="#">
+                    <img class="partner__logo" src="assets/images/image_05.png" alt="">
+                </a>
+            </div>
+        </section>
     </div>
 </main>
-<footer class="footer"></footer>
+<footer class="footer">
+    <div class="container">
+        <ul class="footer__navigation">
+            <li class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#">
+                    PRIVACY POLICY
+                </a>
+            </li>
+            <li class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#">
+                    ABOUT US
+                </a>
+            </li>
+            <li class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#">
+                    SUPPORT
+                </a>
+            </li>
+        </ul>
+        <ul class="footer__social social">
+            <li class="social__item">
+                <a class="social__link" href="#">
+                    <svg class="icon icon-facebook">
+                        <use xlink:href="#icon-facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__item">
+                <a class="social__link" href="#">
+                    <svg class="icon icon-instagram">
+                        <use xlink:href="#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__item">
+                <a class="social__link" href="#">
+                    <svg class="icon icon-twitter">
+                        <use xlink:href="#icon-twitter"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+        <div class="footer__copyrights">
+            Copyright © 1999 - 2019
+        </div>
+    </div>
+</footer>
 </body>
 </html>
