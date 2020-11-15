@@ -55,6 +55,9 @@ h1, h2, h3, h4, h5, h6 {
   &__description {
     text-align: center;
     color: white;
+    margin: {
+      top: 25px;
+    };
   }
 }
 
@@ -217,6 +220,12 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
   }
 
+  &__description {
+    margin: {
+      top: 25px;
+    };
+  }
+
   &__item {
     margin: {
       top: 15px;
@@ -261,6 +270,9 @@ h1, h2, h3, h4, h5, h6 {
 
   &__description {
     text-align: center;
+    margin: {
+      top: 10px;
+    };
   }
 }
 
@@ -270,6 +282,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid $green;
   box-sizing: border-box;
   border-radius: 4px;
+  width: 100%;
   padding: {
     top: 18px;
     bottom: 19px;
