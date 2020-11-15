@@ -1,0 +1,166 @@
+//Global style
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+ul, ol, li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+//Header part
+.header {
+  position: relative;
+  padding: {
+    bottom: 50px;
+  };
+
+  &__title {
+    text-align: center;
+    color: white;
+  }
+
+  &__description {
+    text-align: center;
+    color: white;
+  }
+}
+
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__logo {
+    margin: {
+      top: 24px;
+    };
+  }
+
+  &__main-navigation {
+    margin: {
+      right: auto;
+    };
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin: {
+        top: 38px;
+      };
+    }
+
+    &-item {
+      width: 100%;
+      margin: {
+        //left: 61px;
+      };
+    }
+
+    &-link {
+      color: white;
+    }
+  }
+
+  &__login {
+    width: 100%;
+    margin: {
+      //left: auto;
+      top: 19px;
+    };
+    &-button {
+      color: white;
+    }
+  }
+
+  &__buy-now {
+    width: 100%;
+    margin: {
+      //left: 30px;
+      //top: 38px;
+    };
+    &-button {
+      color: white;
+    }
+  }
+}
+
+
+
+//Main part
+.main {
+
+}
+
+//First section
+.some-section {
+  &__title {
+    text-align: center;
+  }
+}
+
+.some-item {
+  background: #FAFAFA;
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));;
+  padding: {
+    top: 40px;
+    bottom: 30px;
+    left: 15px;
+    right: 15px;
+  };
+  margin: {
+    top: 15px;
+  };
+
+  &__image {
+    display: block;
+    margin: {
+      left: auto;
+      right: auto;
+    };
+
+    &-wrapper {
+      height: 64px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__description {
+    margin: {
+      top: 11px;
+    };
+  }
+
+  &__link {
+    color: $blue;
+    text-align: center;
+    display: block;
+    margin: {
+      top: 37px;
+    };
+  }
+}
+
+//Second section
+
+//Footer part
+.footer {
+  margin-top: auto;
+}

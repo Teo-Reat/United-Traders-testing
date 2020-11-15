@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=PT+Sans:wght@400;700&display=swap');
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+
+.title--main {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 32px;
+}
+
+.title--small {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .title--main {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .title--small {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+@media (min-width: 992px) {
+  body {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .title--main {
+    font-size: 38px;
+    line-height: 46px;
+  }
+
+  .title--small {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+
+  .title--main {
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  .title--small {
+    font-weight: 700;
+  }
+
+  .text--plain {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .text--description {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
