@@ -118,6 +118,10 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
 
+  &__products {
+    position: relative;
+  }
+
   &__login {
     margin: {
       top: 19px;
@@ -183,6 +187,8 @@ h1, h2, h3, h4, h5, h6 {
 
     &-wrapper {
       height: 64px;
+      display: flex;
+      align-items: center;
     }
   }
 
@@ -206,6 +212,8 @@ h1, h2, h3, h4, h5, h6 {
     color: $blue;
     text-align: center;
     display: block;
+    font-size: 14px;
+    line-height: 18px;
     margin: {
       top: auto;
     };
@@ -403,8 +411,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 14px;
   height: 12px;
   fill: white;
-  margin: {
-    bottom: -2px;
-  };
+  position: absolute;
+  top: 6px;
+  right: -18px;
 }
 
