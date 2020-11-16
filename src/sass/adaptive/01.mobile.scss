@@ -270,6 +270,12 @@ h1, h2, h3, h4, h5, h6 {
       left: auto;
       right: auto;
     };
+
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      height: 64px;
+    }
   }
 
   &__title {
